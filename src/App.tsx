@@ -1,6 +1,6 @@
 import { Fragment } from 'react/jsx-runtime'
-import DataSourceWithRender from './components/design-pattern/DataSourceWithRender'
-import Product from './components/design-pattern/Product'
+import DataSourceWithRender from './components/design-pattern/container/DataSourceWithRender'
+import Product from './components/design-pattern/container/Product'
 
 export default function App() {
   return (
