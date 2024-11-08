@@ -33,7 +33,7 @@ export const UncontrolledFlow = ({ children, onDone }: { children: React.ReactNo
 
   // Nếu `currentChild` là một React element hợp lệ, thêm prop `next` vào nó
   if (React.isValidElement(currentChild)) {
-    return React.cloneElement(currentChild, { next })
+    return React.cloneElement(currentChild as React.ReactElement<any>, { next })
   }
 
   // Nếu không, render trực tiếp `currentChild`
