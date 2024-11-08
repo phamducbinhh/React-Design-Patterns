@@ -1,7 +1,6 @@
-import { useFetchProductId } from './hooks/useFetchProductId'
+import { useFetchProduct } from './hooks/useFetchProduct'
 
 export default function App() {
-  const data = useFetchProductId(1)
-  console.log(data)
-  return <div></div>
+  const data = useFetchProduct()
+  return <div>{JSON.stringify(data)}</div>
 }
