@@ -1,14 +1,13 @@
 import { Fragment } from 'react/jsx-runtime'
-import LargeListItems from './components/books/LargeListItems'
-import { books } from './data/books'
-import Modal from './components/Modal'
+import Product from './components/Product'
+import ProductLoader from './components/ProductLoader'
 
 export default function App() {
   return (
     <Fragment>
-      <Modal>
-        <LargeListItems book={books[0]} />
-      </Modal>
+      <ProductLoader>
+        <Product />
+      </ProductLoader>
     </Fragment>
   )
 }
