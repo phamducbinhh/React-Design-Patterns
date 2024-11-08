@@ -1,13 +1,13 @@
 import { Fragment } from 'react/jsx-runtime'
 import Product from './components/Product'
-import ProductLoader from './components/ProductLoader'
+import ResourceLoader from './components/ResourceLoader'
 
 export default function App() {
   return (
     <Fragment>
-      <ProductLoader>
+      <ResourceLoader resourceUrl='http://localhost:4000/api/v1/products' resourceName='product'>
         <Product />
-      </ProductLoader>
+      </ResourceLoader>
     </Fragment>
   )
 }
