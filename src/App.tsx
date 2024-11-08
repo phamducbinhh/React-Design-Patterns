@@ -1,5 +1,6 @@
 import { UncontrolledFlow } from './components/uncontrolled/flow'
 
+// Định nghĩa từng bước của quy trình, mỗi bước nhận `next` để chuyển tiếp
 const StepOne = ({ next }: { next?: any }) => {
   return (
     <>
@@ -25,6 +26,7 @@ const StepThree = ({ next }: { next?: any }) => {
   )
 }
 
+// Component chính, sử dụng `UncontrolledFlow` để quản lý các bước
 function App() {
   return (
     <>
