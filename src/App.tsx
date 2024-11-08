@@ -1,11 +1,7 @@
-import IncludeProduct from './components/hight-order-component/IncludeProduct'
-import ProductById from './components/hight-order-component/ProductId'
+import { useFetchProductId } from './hooks/useFetchProductId'
 
-const ProductInfoWithLoader = IncludeProduct(ProductById, 1)
 export default function App() {
-  return (
-    <>
-      <ProductInfoWithLoader />
-    </>
-  )
+  const data = useFetchProductId(1)
+  console.log(data)
+  return <div></div>
 }
