@@ -1,11 +1,11 @@
-import Product from './components/design-pattern/container/Product'
-import CheckProps from './components/hight-order-component/CheckProps'
+import IncludeProduct from './components/hight-order-component/IncludeProduct'
+import ProductById from './components/hight-order-component/ProductId'
 
-const ProductWrapper = CheckProps(Product)
+const ProductInfoWithLoader = IncludeProduct(ProductById, 1)
 export default function App() {
   return (
     <>
-      <ProductWrapper test='test' login='login' />
+      <ProductInfoWithLoader />
     </>
   )
 }
